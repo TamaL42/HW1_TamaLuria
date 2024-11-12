@@ -1,7 +1,10 @@
 #include "LinkedList.h"
 #include <stdlib.h>
 
-
+/*role: Adds a node to the list
+Input : head of the list
+Output : none
+*/
 void addToHead(Node** head, unsigned int value)
 {
     Node* newNode = new Node;
@@ -18,7 +21,10 @@ void addToHead(Node** head, unsigned int value)
         (*head)->next = NULL;
     }
 }
-
+/*role: remove a node From the head
+Input : head of the list
+Output : none
+*/
 void removeFromHead(Node** head)
 {
     if (*head != NULL) {
